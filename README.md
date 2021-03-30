@@ -4,7 +4,7 @@ The dream phone is a device that enables communication between a lucid dreamer a
 
 This dream phone uses EOG (electrooculography) to allow the lucid dreamer to communicate. EOG, like EKG or EEG, reads electric signals from the body. Instead of reading heart beats like EKG, EOG reads eye movement.
 
-When a sleeping person is in a dreaming REM state, they are paralyzed except for the ability to control small twitches, the breath, and eye movements. They can signal with their eyes in morse code and EOG can detect these signals. The dream phone soft ware can then translate the morse code into english letters.
+When a sleeping person is in a dreaming REM state, they are paralyzed except for the ability to control small twitches, the breath, and eye movements. They can signal with their eyes in morse code and EOG can detect these signals. The dream phone software can then translate the morse code into english letters.
 
 ## SD Card Version
 
