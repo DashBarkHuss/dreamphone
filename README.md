@@ -51,7 +51,7 @@ The Dream Phone SD
 
 ### 1. Hook up the Arduino to the Heart and Brain Spikershield
 
-For this version, we need to hook up the Heart and Brain SpikerShield with wires to the arduino uno, instead of stacking it ontop of the arduino.
+For this version, we need to hook up the Heart and Brain SpikerShield with wires to the arduino uno, instead of stacking it on top of the arduino. This is because the HB shield will block pins we need for the sd card if we stack it.
 
 <img src = "images/hb_to_ard.jpeg">
 
