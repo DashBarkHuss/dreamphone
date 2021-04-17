@@ -16,7 +16,7 @@ _The dream phone in a pile on my desk_
 
 ## SD Card Version
 
-Future versions will send messages to the internet. But this version saves massages to a file.
+Future versions will send messages to the internet. But this version saves messages to a file.
 
 uses file: dream_phone_SD_card.ino
 
