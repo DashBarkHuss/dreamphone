@@ -72,7 +72,7 @@ Connect the following pins of arduino uno to the same spot on the HB shield if y
 
 ### 3. Hook Up the Battery Snap To the arduino.
 
-Connect the battery snap lines to the long long terminals on the breadboard and to then to the arduino:
+Connect the battery snap lines to the long terminals on the breadboard and to then to the arduino:
 
 - Battery Power to Arduino`VIN`
 - Battery Ground to Arduino `GND`
