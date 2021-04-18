@@ -44,9 +44,9 @@ enum dspStates {
   INTERPRET_MORSE_CODE  // interpret eye morse code movements
 };
 //enum dspStates state = 0;
-enum dspStates state = INDUCE_LUCIDITY;
+enum dspStates state = WAIT_FOR_SLEEP; //staring mode- WAIT_FOR_SLEEP. Or change to other state if debugging
 //------------------------------------------WAIT_FOR_SLEEP variables----------------------------------
-int minutesUntilSleep = 0;
+int minutesUntilSleep = 90; // how long WAIT_FOR_SLEEP should last. adjust to your preference. 
 //----------------WAIT_FOR_SLEEP Button variables----------
 const int buttonPin = 7;    // the number of the pushbutton pin
 const int ledPin = 9;      // the number of the LED pin on the Spikershield to indicate the button was pressed
