@@ -46,7 +46,7 @@ enum dspStates {
 //enum dspStates state = 0;
 enum dspStates state = WAIT_FOR_SLEEP; //staring mode- WAIT_FOR_SLEEP. Or change to other state if debugging
 //------------------------------------------WAIT_FOR_SLEEP variables----------------------------------
-int minutesUntilSleep = 90; // how long WAIT_FOR_SLEEP should last. adjust to your preference. 
+int minutesUntilSleep = 300; // how long (minutes) WAIT_FOR_SLEEP should last. adjust to your preference. 
 //----------------WAIT_FOR_SLEEP Button variables----------
 const int buttonPin = 7;    // the number of the pushbutton pin
 const int ledPin = 9;      // the number of the LED pin on the Spikershield to indicate the button was pressed
@@ -84,7 +84,7 @@ enum morseState {
 enum morseState currentMorseState = NEW_INTRA_CHARACTER;
 String subjectsMorseCode = "";
 //--------------INDUCE_LUCIDITY
-const int brightnessIncrement = 255 / 5;
+const int brightnessIncrement = 255 / 50;
 int brightness = brightnessIncrement;
 const int lucidLedPin = 9; //whatever pin your leds are connected to
 bool subjectLucid = false;
@@ -296,7 +296,7 @@ void updateSubjectsLucidSignal(unsigned long signalLength, bool lastSignal ) {
   char morseChar = signalToMorse(signalLength, lastSignal);
   if (morseChar != 'g') {
     subjectsLucidSignal.concat(morseChar);
-  } else if (currentMorseState == NEW_CHARACTER || currentMorseState == NEW_WORD) {
+  } else if (currentMorseState == NEW_CHARACTER || currentMorseState == NEW_WORD || currentMorseState == NEW_MESSAGE) {
     subjectsLucidSignal = "";
   }
 }
