@@ -403,6 +403,8 @@ void updateEyeMovedBuffer(unsigned long now) {
     updateULBuffer( eyeMovedTime, eyesMovedBuffer, 4 );
     lastIntervalStart = now;
   } else if (delta >= 2 * interval) {
+        lastIntervalStart = now; 
+
     for (int i = 0; i < 4; i++)  //reset buffer
     {
       eyesMovedBuffer[i] = 0;
