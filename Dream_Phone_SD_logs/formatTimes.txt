@@ -1,0 +1,14 @@
+machineOn = new Date(Date.UTC(2021,05,03,23,21,00,00)) //ex:jun 3 11:21. replace with your start time
+machineOn.setTime(machineOn.getTime()+machineOn.getTimezoneOffset()*60*1000) //central time
+
+getLogTime = ( millisStr)=>{
+const millis = +millisStr;
+const nd = new Date(machineOn);
+nd.setTime(nd.getTime() + millis);
+const toTime =`${nd.getHours()>12?nd.getHours()-12:nd.getHours()}:${nd.getMinutes()<10?'0'+nd.getMinutes():nd.getMinutes()}:${nd.getSeconds()<10?'0'+nd.getSeconds():nd.getSeconds()}${nd.getHours()>12?"p":"a"}`;
+return toTime;
+}
+
+array = logs.replace(/\d+/g, getLogTime).split('\n') // replace 'logs' with the text of the night logs
+
+array.forEach(console.log) // if you did this in the browser console you can then press "copy"

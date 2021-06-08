@@ -46,7 +46,7 @@ enum dspStates {
 //enum dspStates state = 0;
 enum dspStates state = WAIT_FOR_SLEEP; //staring mode- WAIT_FOR_SLEEP. Or change to other state if debugging
 //------------------------------------------WAIT_FOR_SLEEP variables----------------------------------
-int minutesUntilSleep = 300; // how long (minutes) WAIT_FOR_SLEEP should last. adjust to your preference. 
+int minutesUntilSleep = 300; // how long (minutes) WAIT_FOR_SLEEP should last. adjust to your preference.
 //----------------WAIT_FOR_SLEEP Button variables----------
 const int buttonPin = 7;    // the number of the pushbutton pin
 const int ledPin = 9;      // the number of the LED pin on the Spikershield to indicate the button was pressed
@@ -403,7 +403,7 @@ void updateEyeMovedBuffer(unsigned long now) {
     updateULBuffer( eyeMovedTime, eyesMovedBuffer, 4 );
     lastIntervalStart = now;
   } else if (delta >= 2 * interval) {
-        lastIntervalStart = now; 
+    lastIntervalStart = now;
 
     for (int i = 0; i < 4; i++)  //reset buffer
     {
